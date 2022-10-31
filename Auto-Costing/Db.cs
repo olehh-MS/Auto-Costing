@@ -42,7 +42,6 @@ namespace Auto_Costing
                 Name = "N7",
                 Description = "N7 layer",
                 LS_LayerGroupId = null,
-                LS_SubLayerId = null,
             },
             new LS_Layers()
             {
@@ -51,7 +50,6 @@ namespace Auto_Costing
                 Name = "MaterialN7",
                 Description = "MaterialN7",
                 LS_LayerGroupId = new Guid("390d8d84-8c3c-440a-9ae2-6441e2813701"),
-                LS_SubLayerId = new Guid("0bc7716b-c2a5-4291-9ab2-2b50a042c3e4"),
             },
             new LS_Layers()
             {
@@ -60,7 +58,6 @@ namespace Auto_Costing
                 Name = "LaborN7",
                 Description = "LaborN7",
                 LS_LayerGroupId = new Guid("390d8d84-8c3c-440a-9ae2-6441e2813701"),
-                LS_SubLayerId = null,
             },
             new LS_Layers()
             {
@@ -69,7 +66,6 @@ namespace Auto_Costing
                 Name = "Packaging",
                 Description = "Packaging layer",
                 LS_LayerGroupId = null,
-                LS_SubLayerId = null,
             },
         };
 

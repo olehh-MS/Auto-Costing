@@ -1,4 +1,7 @@
+using Auto_Costing.Infrastructure;
 using Auto_Costing.Services;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +22,10 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddTransient<ICalculationsService, CalculationService>();
+builder.Services.AddDbContext<AutoCostingContext>();
+
+builder.Services.AddTransient<ICalculationsService, CalculationsService>();
+builder.Services.AddTransient<ILayersService, LayersService>();
 
 var app = builder.Build();
 

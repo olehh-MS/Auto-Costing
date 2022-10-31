@@ -15,38 +15,10 @@ namespace Auto_Costing.Controllers
         }
 
         [HttpGet]
-        [Route("/CalculateFormula/{formula}/{w}/{h}")]
+        [Route("/CalculateFormula")]
         public IActionResult CalculateFormula(string formula, int w, int h)
         {
-            return Ok(_calculationsService.CalculateFormula(formula, w, h));
+            return Ok();
         }
-
-        //[HttpGet]
-        //[Route("/GetLayers/{layerId}/{w}/{h}")]
-        //public IActionResult GetLayers(Guid layerId, int w, int h)
-        //{
-        //    return Ok(_calculationsService.getLayers(layerId, w, h));
-        //}
-
-        //[HttpGet]
-        //[Route("/CreateTable/{layer}")]
-        //public IActionResult CreateTable(string layer)
-        //{
-        //    return Ok(_calculationsService.buildTable(layer));
-        //}
-
-        //[HttpGet]
-        //[Route("/GetTables")]
-        //public IActionResult GetTable()
-        //{
-        //    return Ok(_calculationsService.getTablesList());
-        //}
-
-        //[HttpGet]
-        //[Route("/GetWidthHeight")]
-        //public IActionResult getWidthHeight()
-        //{
-        //    return Ok(_calculationsService.getWidthHeight());
-        //}
     }
 }
